@@ -4,7 +4,7 @@
 ## Concepts of Programming Languages
 ## CSCI 305, Spring 2018
 
-# Due Date: February 9, 2018 at Midnight
+# Due Date: February 12, 2018 at Midnight
 
 # Ruby
 
@@ -17,7 +17,7 @@ You can install ruby using instructions found at the following sites:
 
 Concepts we will explore as a part of this Lab:
 * Regular Expression -> See this [tutorial](https://regexone.com/) and this [too](http://regexpal.com/)
-* Ruby -> See this [tutorial](https://CSCI305.github.io/tutorials/ruby_tutorial.pdf)
+* Ruby -> See this [tutorial](https://www.tutorialspoint.com/ruby/)
 * Procedural Languages
 
 # *Step -1:* Fork and Clone this Repository
@@ -76,7 +76,7 @@ This initial template gives code to loop through each line of the file and print
 # Pre-processing
 
 ## *Step 1:* Extract song title
-For steps 1-3 you will want to construct a method called: `cleanup_title` which takes a single string and returns a cleaned up string suitable for futher processing. The method name is required for the self-check specification testing.
+For steps 1-3 you will want to construct a method called: `cleanup_title` which takes a single string and returns a cleaned up string suitable for further processing. The method name is required for the self-check specification testing.
 
 Each line contains a track id, song id, artist name, and the song title, such as:
 ```
@@ -154,7 +154,7 @@ rspec spec\self_check_1_spec.rb
 
 A bigram is a sequence of two adjacent words in a text. The frequency distribution of bigrams in text(s) is commonly used in statistical natural language processing (see http://en.wikipedia.org/wiki/Bigram). Across this corpus of one million song titles, you will count all the bigram words.
 
-First, you need to split the title string into individual words. Next, you should use one or more data structures to keep track of these word pair counts. That is, for every word, you must keep track of the count for each word that follows it. I strongly recommend you design your data structure for fast retrieval. Put some thought into which data structure to choose. Once you have decided, you can compare your choice to mine.
+First, you need to split the title string into individual words. Next, you should use one or more data structures to keep track of these word pair counts. That is, for every word, you must keep track of the count for each word that follows it. I strongly recommend you design your data structure for fast retrieval. You will need to use the provided variable `$bigrams` provided in the code for the underlying self-check specification tests to work, but it is not required for the tests related to the lab questions.
 
 # Building a Song Title
 
@@ -186,7 +186,7 @@ rspec spec\self_check_2_spec.rb
 
 # Continuing with Building a Song Title
 
-Now you are going to use the `mcw` method to string together a song title. Beginning with a given starting word, write an iterative structure that strings together words that most commonly follow each other in the dataset. Continue until a word does not have a successive word in the dataset, or the count of words in your title reaches 20.
+You will need to create a method `create_title` which produces the most probable title. The `create_title` function takes in a single parameter, the starting word for the title. You then need to use the `mcw` method to string together a song title. Beginning with a given starting word, write an iterative structure that strings together words that most commonly follow each other in the dataset. Continue until a word does not have a successive word in the dataset, or the count of words in your title reaches 20.
 
 # Lab Questions
 

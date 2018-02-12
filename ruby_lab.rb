@@ -17,8 +17,18 @@ def process_file(file_name)
 	puts "Processing File.... "
 
 	begin
-		IO.foreach(file_name) do |line|
-			# do something for each line
+		if RUBY_PLATFORM.downcase.include? 'mswin'
+			file = File.open(file_name)
+			unless file.eof?
+				file.each_line do |line|
+					# do something for each line (if using windows)
+				end
+			end
+			file.close
+		else
+			IO.foreach(file_name, encoding: "utf-8") do |line|
+				# do something for each line (if using macos or linux)
+			end
 		end
 
 		puts "Finished. Bigram model built.\n"
