@@ -1,24 +1,24 @@
 Your name
 CSCI-305
 
-10.
+10. The phrase "Little Girl" crops up quite a bit as well when the phrase "hey" is submitted the output is a long string of "hey"'s. The filler words such as in, as , the, etc also show up quite frequently and mess with the grammar of the resulting song title. These words also seem to create loops.
 
-14.
+14. A lot of the titles devolve into repeating patterns because filler words such as the stop words we removed tend to follow each other, and therefor point to each other causing loops
 
-15.
+15. Interestingly enough I got this to work on the first try, I just inputted the word "test" and it resulted in the song title "test our god king queen sheb" (amazing title by the way) Note: This only works with the stop words removed and searching only the a_tracks.txt file. I could however get the input "testing" to work on unique_tracks.txt which results in the song title "testing 1 2 b flat maj op96"
 
-16.
+16. My implementation is not that elegant but it works quite well. I start by creating an array that I will use for storing each word we add to the newly created song title. Then every time it adds a new word to the new song title it makes sure that it is not already in the array. This avoids repeating words and creating loops of patterns. This could run into issues with real song titles that have more than one instance of a word but I believe this is the best solution I can come up with.
 
-19.
+19. I do indeed get the same title each time, but due to the wording of the question I would assume that I am not supposed to. If I am not supposed to I would assume the cause of this difference is the random selection of the words that resulted in a tie for most common word.
 
-20.
+20. My favorite title I found was the one I found during step 15 while testing a_tracks.txt. I created the song title "test our god king queen sheb" with the input "test". I thought this title was quite good.
 
-21.
+21. I quite like the formatting and syntax. More specifically I like not having to declare types, this saves a lot of time and makes writing the code feel really fluid. I also really enjoy not having to enclose each method, if statement, etc. in curly braces. This avoids the tedious process of trying to find where you may have forgotten to put one.
 
-22.
+22. Learning regular expressions was not particularly fun but that is not Ruby specific. I did not enjoy losing the debugging functionality that I was used to in Java. I also found that because Ruby is a dynamically typed it made it hard to debug and hard to read. This led to a few issues where a variable I was using was not of the type that I thought it was (because I was unfamiliar with the returns of certain class methods).
 
-23.
+23. I actually really enjoyed this lab and really appreciate the work you put into putting it together for us. I believe this lab did an excellent job of walking us through some of the main concepts of scripting and Ruby. I personally left this until the last minute and therefor spent much longer and in much more of a rush than I should have been. That being said, I think that if I had started this lab on time it would have been a perfect pace for the course. I quite liked how self taught this lab was. The lab assignment gave us just enough to get us started and linked us to external resources to learn more on our own. I think this is how all labs should be structured, learning through repetition and trial and error is in my opinion the best way to learn. 
 
-24.
+24. 14 hours probably in total, and to be fully honest that was all in the last 24 hours. I made the poor choice of procrastinating and do not think that the lab should have taken this long and it would have been much more manageable if I had started on time.
 
-25.
+25. Yes I think I would use ruby again, that being said I am not really sure what I would use it for. I will have to wait and see.
